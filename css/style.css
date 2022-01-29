@@ -57,6 +57,7 @@ h2 {
   font-weight: var(--font-weight-bold);
   line-height: 42.19px;
   letter-spacing: var(--spacing-percent-3);
+  margin: 0 auto;
   text-align: center;
   padding-bottom: 50px;
 }
@@ -147,11 +148,18 @@ p{
   .main-title {
     display: flex;
     background: var(--dark-color);
-    /* position: relative;  */
     height: 600px; 
     margin: 0 auto;
-    /* align-items: center; */
     text-align: center; 
+    align-items: center;  
+
+    /* background image */
+    background-image: linear-gradient(rgba(47,48,58,0.4),rgba(47,48,58,0.4)), url(../images/team_backgrnd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1600px;
+
   }
 /* 
   .main-title-content{
@@ -286,6 +294,24 @@ p{
     text-align: center;
   } 
   
+  /* =========== customers =========== */
+  .customers{
+    background-color: var(--white-color);
+    padding: 94px 0px 94px;
+  }
+
+  .customers-content{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .customers-content-item{
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+  }
+
   /* =========== portfolio button =========== */
 
   .portfolio-main{
@@ -326,6 +352,7 @@ p{
   .portfolio-button-item:hover,
   .portfolio-button-item:focus,
   .portfolio-button-item:active {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     color: var(--white-color);
     background-color: var(--accent-color);
   }
@@ -347,9 +374,13 @@ p{
     border: 1px solid var(--border-portfolio);
     transition: box-shadow 250ms ease-in-out;
     overflow: hidden;
-    cursor: pointer;
   }
 
+  .portfolio-content-item:hover,
+  .portfolio-content-item:focus{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
 
   .portfolio-item-link h4 {
     color: var(--color-primary);
@@ -372,7 +403,6 @@ p{
     padding-bottom: 20px;
     padding-left: 24px;
   }
-
   
   /* =========== footer =========== */
 
