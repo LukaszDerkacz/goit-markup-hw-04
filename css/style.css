@@ -21,6 +21,7 @@
   --light-color: #F5F4FA;
   --white-color: #ffffff;
   --border-portfolio: #EEEEEE;
+  --svg-icon-color: #AFB1B8;
   
   --spacing-percent-3: 0.03em;
   --spacing-percent-6: 0.06em;
@@ -295,21 +296,38 @@ p{
   } 
   
   /* =========== customers =========== */
-  .customers{
+  .customers {
     background-color: var(--white-color);
     padding: 94px 0px 94px;
   }
 
-  .customers-content{
+  .customers-content {
     display: flex;
     gap: 30px;
+    align-items: center;  
+    justify-content: center;
+  }
+/* 
+  .customers-content-item {
+  } */
+
+  .svg-icon {
+    fill: var(--svg-icon-color);
+    display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid var(--svg-icon-color);
+    border-radius: 4px;
+    /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1) */
   }
 
-  .customers-content-item{
-    border: 1px solid #AFB1B8;
+  .customers-content:hover,
+  .customers-content:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
     border-radius: 4px;
+    /* cursor: pointer; */
+    /* fill: var(--accent-color); */
   }
 
   /* =========== portfolio button =========== */
