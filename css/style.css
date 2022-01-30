@@ -303,32 +303,24 @@ p{
 
   .customers-content {
     display: flex;
-    gap: 30px;
     align-items: center;  
     justify-content: center;
+    gap: 30px;
   }
-
-  /* .customers-content-item {
-
-  } */
 
   .svg-icon {
     fill: var(--svg-icon-color);
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    /* justify-content: center;
-    align-items: center; */
+    align-items: center;
     border: 1px solid var(--svg-icon-color);
     border-radius: 4px;
+    cursor: pointer;
   }
 
   .svg-icon:hover,
   .svg-icon:active{
-    fill: var(--accent-color);
     border: 1px solid var(--accent-color);
     border-radius: 4px;
-    cursor: pointer;
+    fill: var(--accent-color);
   }
 
   /* =========== portfolio button =========== */
