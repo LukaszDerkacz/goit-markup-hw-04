@@ -550,14 +550,27 @@ p{
   .footer-two ul{
     display: flex;
     justify-content: space-between;
-    width: 44px;
-    height: 44px;
-    border-radius:  50px;
     gap: 10px;
   }
 
-  /* .footer-icons{
+  .footer-icons{
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
-  } */
+    justify-content: center;
+  }
+
+  .footer-svg{
+    fill: var(--white-color);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .footer-svg:hover,
+  .footer-svg:active{
+    background-color: var(--accent-color) ;
+  }
