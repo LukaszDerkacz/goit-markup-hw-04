@@ -319,9 +319,6 @@ p{
     gap: 30px;
   }
 
-  .customer-width{ 
-  }
-
   .svg-icon {
     fill: var(--svg-icon-color);
     width: 170px;
