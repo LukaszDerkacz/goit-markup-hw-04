@@ -226,11 +226,22 @@ p{
     width: 270px;
   }
 
+  .table-svg-icon{
+    width: 270px;
+    height: 120px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-color);
+    border-radius: 4px;
+  }
+
   .table-description-content-item h3 {
     font-size: var(--font-size-14px);
     line-height: var(--line-height-table-header);
     font-weight: var(--font-weight-bold);
     letter-spacing: var(--spacing-percent-3);
+    margin-top: 30px;
     margin-bottom: 10px;
   }
 
@@ -241,6 +252,7 @@ p{
     font-weight: var(--font-weight-normal);
     letter-spacing: var(--spacing-percent-3);
   }
+
 
   /* =========== task description =========== */
   .task-description {
@@ -299,12 +311,41 @@ p{
     font-weight: var(--font-weight-normal);
     line-height: 18.75px;
     letter-spacing: var(--spacing-percent-3);
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     width: 270px;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
     text-align: center;
   } 
+
+  .team-web {
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 30px;
+  }
+
+  .team-web-gap:not(:last-of-type) {
+    margin-right: 10px;
+  }
+
+  .team-web-svg-item {
+    fill: var(--svg-icon-color);
+    width: 44px;
+    height: 44px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .team-web-svg-item:hover,
+  .team-web-svg-item:active{
+    fill: var(--white-color);
+    background-color: var(--accent-color);
+  }
+
   
   /* =========== customers =========== */
   .customers {
@@ -319,7 +360,7 @@ p{
     gap: 30px;
   }
 
-  .svg-icon {
+  .customers-svg-icon {
     fill: var(--svg-icon-color);
     width: 170px;
     height: 92px; 
@@ -331,8 +372,8 @@ p{
     cursor: pointer;
   }
 
-  .svg-icon:hover,
-  .svg-icon:active{
+  .customers-svg-icon:hover,
+  .customers-svg-icon:active{
     border: 1px solid var(--accent-color);
     border-radius: 4px;
     fill: var(--accent-color);
