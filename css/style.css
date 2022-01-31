@@ -23,6 +23,7 @@
   --border-portfolio: #EEEEEE;
   --svg-icon-color: #AFB1B8;
   
+  --spacing-percent-2: 0.02em;
   --spacing-percent-3: 0.03em;
   --spacing-percent-6: 0.06em;
 
@@ -129,18 +130,29 @@ p{
   .header-contact{
     display: flex;
     gap: 50px;
+    align-items: center;
+  }
+
+  .header-contact-right a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
   }
 
   .header-contact-link {
     color: var(--second-color);
+    fill: var(--second-color);
     font-size: var(--font-size-14px);
     font-weight: var(--font-weight-normal);
+    letter-spacing: var(--spacing-percent-2);
     transition: color 150ms ease-in-out;
   }
 
   .header-contact-link:hover,
   .header-contact-link:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
   }
 
 /* =========== main index =========== */
