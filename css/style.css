@@ -146,7 +146,6 @@ p{
     font-size: var(--font-size-14px);
     font-weight: var(--font-weight-normal);
     letter-spacing: var(--spacing-percent-2);
-    /* transition: color 150ms ease-in-out; */
   }
 
   .header-contact-link:hover,
@@ -321,23 +320,19 @@ p{
   }
 
   .customer-width{ 
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    width: 16.6666666667%;
   }
 
   .svg-icon {
     fill: var(--svg-icon-color);
+    width: 170px;
+    height: 92px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid var(--svg-icon-color);
     border-radius: 4px;
     cursor: pointer;
   }
-.customer-icon{
-  width:41px;
-  height:46.7px; 
-
-}
 
   .svg-icon:hover,
   .svg-icon:active{
